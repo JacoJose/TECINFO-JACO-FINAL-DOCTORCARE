@@ -1,0 +1,270 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
+}
+
+
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #DCE9E2;
+    box-shadow: 0 10px 25px -5px #ffffff, 0 8px 10px -6px #000000;
+    z-index: 10;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 24px;
+}
+
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1rem 0;
+    gap: 1rem;
+    text-decoration: none; 
+}
+
+.logo {
+    font-size: 1.65rem;
+    font-weight: 400;
+    
+}
+
+.logo span {
+    color: #00856F;
+    font-weight: 500;
+}
+
+.nav-links {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    font-weight: 500;
+    list-style: none;
+}
+
+.links a {
+    text-decoration: none;
+    color: #00856F;
+}
+
+.btn-agendar {
+    padding: 0.6rem;
+    border-color: #00856F;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    color: #00856F;
+}
+
+.background {
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #DCE9E2; 
+    z-index: -1;
+    align-items: center; 
+}
+
+.background-2 {
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #F7F9F9; 
+    z-index: -1;
+    align-items: center; 
+}
+
+.background-3 {
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #FFFAF1;
+    z-index: -1;
+    align-items: center; 
+}
+
+.background-4 {
+    min-height: 100vh; 
+    width: 100%;
+    background-color: #FFFFFF;
+    z-index: -1;
+    align-items: center; 
+}
+
+.footer {
+    height: 268px; 
+    width: 100%;
+    background-color: #00856F;
+    z-index: 1;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 24px;
+    height: 268px;
+    background-color: #135146;
+}
+
+.footer-content {
+    padding: 1rem;
+    height: 268px;
+    opacity: 1;
+    background-color: #56958a;
+    align-items: flex-start;
+}
+
+
+.web-container {
+    display: flex ;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 24px;
+    height: 100vh;
+}
+
+.web-content {
+    display: flex;
+    flex-direction: row;
+    padding: 10rem 0rem;
+    width: 100%;
+    height: 100%;
+    gap: 2rem;
+
+}
+
+.web-content-2 {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    align-items: flex-start;
+
+}
+
+.web-content-3 {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    align-items: flex-start;
+
+}
+
+.web-content-4 {
+    padding: 1rem;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    align-items: flex-start;
+
+}
+
+.bem-vindo {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 8%;
+    color: #00856F;
+
+    
+}
+
+.main-titulo {
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 52px;
+    line-height: 130%;
+    letter-spacing: 0%;
+    max-width: 605px;
+    height: 136px;
+    top: 189px;
+    left: 123px;
+    opacity: 1;
+
+
+}
+
+.descricao {
+    width: 585px;
+    height: 54px;
+    top: 349px;
+    left: 123px;
+    opacity: 1;
+    color: #495057;
+    font-weight: 450;
+    font-size: 18px;
+    line-height: 150%;
+    letter-spacing: 0%;
+}
+
+.btn-agendar-consulta {
+    display: fit-content;
+    padding: 1rem 2rem;
+    border-radius: 1.5rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #00856F;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-transform: uppercase;
+
+}
+
+.introducao {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: flex-start;
+}
+
+.pessoa {
+    display: flex;
+}
+
+img {
+    width: 250%;
+    height: 250%;
+    object-fit: contain;
+
+}
+
+.destaques-background {
+    align-items: center;
+    width: 100%;
+}
+
+.destaques-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 24px;
+    z-index: 5;
+}
+
+.destaques-content {
+    padding: 1rem;
+    position: absolute;
+    width: 1200px;
+    height: 210px;
+    border-width: 1px;
+    border-radius: 6px;
+    background-color: #FFFAF1;
+
+}
