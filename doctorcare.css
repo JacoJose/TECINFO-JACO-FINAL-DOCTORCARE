@@ -139,6 +139,7 @@
     margin: 0 auto;
     padding: 0px 24px;
     height: 100vh;
+    background-color: #957f56;
 }
 
 .web-content {
@@ -158,6 +159,7 @@
     height: 100%;
     opacity: 1;
     align-items: flex-start;
+    background-color: #919292
 
 }
 
