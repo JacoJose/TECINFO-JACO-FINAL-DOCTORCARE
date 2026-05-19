@@ -169,6 +169,7 @@
     height: 100%;
     opacity: 1;
     align-items: flex-start;
+    background-color: #7e91ab;
 
 }
 
@@ -178,6 +179,7 @@
     height: 100%;
     opacity: 1;
     align-items: flex-start;
+    background-color: #b0a38b;
 
 }
 
@@ -262,13 +264,13 @@ img {
     padding: 0px 24px;
     z-index: 5;
     align-items: center;
-    position: relative;
+    /* position: relative; */
 }
 
 .destaques-content {
-    position: absolute;
+    /* position: absolute; */
     align-items: center;
-    width: 96%;
+    width: 100%;
     height: 210px;
     border-width: 1px;
     border-radius: 6px;
