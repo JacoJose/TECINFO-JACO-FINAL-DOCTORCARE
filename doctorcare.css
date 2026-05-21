@@ -153,7 +153,7 @@
 }
 
 .introducao {
-    grid-area: introducao;
+    /* grid-area: introducao; */
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -174,10 +174,6 @@ img {
 
 .destaques {
     grid-area: destaques;
-    padding: 1rem;
-    width: 100%;
-    height: 210px;
-    border-width: 1px;
     border-radius: 12px;
     background-color: #FFFAF1;
     box-shadow: 0 8px 10px -6px #b4b4b4;
@@ -185,26 +181,33 @@ img {
 
 }
 .destaques-grid {
-    display: grid;
-    grid-template-areas:
-        'pacientes-atendidos especialistas-disponiveis anos-mercado';
-    grid-template-rows: auto auto auto;
-    grid-template-columns: auto auto auto;
-    padding:
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 8rem;
     width: 100%;
-    height: 100%;
+    height: 210px;
 }
 
 .pacientes-atendidos {
-
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
 }
 
 .especialistas-disponiveis {
-
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
 }
 
 .anos-mercado {
-
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 130%;
+    letter-spacing: 0%;
 }
 
 .background-2 {
