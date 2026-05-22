@@ -68,8 +68,8 @@
     font-weight: 500;
     color: #00856F;
 }
-.fundo-real {
-    z-index: -1;
+.background-container {
+    z-index: 1;
 }
 
 .web-container {
@@ -80,11 +80,11 @@
 }
 
 .background {
-    min-height: 100vh; 
+    height: 678px; 
     width: 100%;
-    background-color: #DCE9E2; 
-    z-index: -1;
-    align-items: center; 
+    background-color: #d55d5d; 
+    z-index: 5;
+    box-shadow: 0 8px 10px -6px #5a3131;
 }
 
 .web-content {
@@ -166,9 +166,10 @@
 }
 
 img {
-    height: 600px;
+    height: 650px;
     width: 100%;
     object-fit: contain;
+    transform: translateY(-15%);
 
 }
 
@@ -176,46 +177,65 @@ img {
     grid-area: destaques;
     border-radius: 12px;
     background-color: #FFFAF1;
-    box-shadow: 0 8px 10px -6px #b4b4b4;
-    transform: translateY(-65%);
+    box-shadow: 0 8px 10px -6px #000000;
+    transform: translateY(-115%);
 
 }
+
 .destaques-grid {
-    justify-content: space-between;
-    display: flex;
-    flex-direction: row;
+    text-align: center;
+    display: grid;
+    grid-template-areas:
+        'A B C';
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
     padding: 4rem 8rem;
     width: 100%;
     height: 210px;
+    justify-content: space-between;
 }
 
-.pacientes-atendidos {
+.tipografia-destaques {
+    font-weight: 450;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    color: #00856F;
+}
+
+.num-pacientes {
+    grid-area: A;
     font-weight: 700;
     font-size: 48px;
     line-height: 130%;
     letter-spacing: 0%;
 }
 
-.especialistas-disponiveis {
+.num-especialistas {
+    grid-area: B;
     font-weight: 700;
     font-size: 48px;
     line-height: 130%;
     letter-spacing: 0%;
+    width: 100%;
 }
 
-.anos-mercado {
+.num-anos {
+    grid-area: C;
     font-weight: 700;
     font-size: 48px;
     line-height: 130%;
     letter-spacing: 0%;
+    width: 100%;
 }
 
 .background-2 {
     min-height: 100vh; 
     width: 100%;
     background-color: #F7F9F9; 
-    z-index: -1;
+    z-index: 4;
     align-items: center; 
+    box-shadow: 0 8px 10px -6px #000000;
 }
 
 .web-content-2 {
@@ -231,7 +251,7 @@ img {
     min-height: 100vh; 
     width: 100%;
     background-color: #FFFAF1;
-    z-index: -1;
+    z-index: 3;
     align-items: center; 
 }
 
@@ -247,7 +267,7 @@ img {
     min-height: 100vh; 
     width: 100%;
     background-color: #FFFFFF;
-    z-index: -1;
+    z-index: 2;
     align-items: center; 
 }
 
