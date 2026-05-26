@@ -82,7 +82,7 @@
 .background {
     height: 678px; 
     width: 100%;
-    background-color: #d55d5d; 
+    background-color: #DCE9E2;
     z-index: 5;
     box-shadow: 0 8px 10px -6px #5a3131;
 }
@@ -100,17 +100,15 @@
 }
 
 
-.bem-vindo {
+.titulo-secao {
     font-weight: 700;
     font-size: 14px;
     line-height: 150%;
     letter-spacing: 8%;
     color: #00856F;
-
-    
 }
 
-.main-titulo {
+.hero-titulo {
     font-weight: 700;
     font-style: Bold;
     font-size: 52px;
@@ -118,11 +116,7 @@
     letter-spacing: 0%;
     max-width: 605px;
     height: 136px;
-    top: 189px;
-    left: 123px;
-    opacity: 1;
-
-
+    color: #212529;
 }
 
 .descricao {
@@ -153,7 +147,7 @@
 }
 
 .introducao {
-    /* grid-area: introducao; */
+    grid-area: introducao;
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -177,8 +171,10 @@ img {
     grid-area: destaques;
     border-radius: 12px;
     background-color: #FFFAF1;
-    box-shadow: 0 8px 10px -6px #000000;
+    box-shadow: 0 10px 25px -5px #ffffff, 0 8px 10px -6px #000000;
     transform: translateY(-115%);
+    height: 210px;
+    width: 100%;
 
 }
 
@@ -191,7 +187,7 @@ img {
     grid-template-rows: auto auto;
     padding: 4rem 8rem;
     width: 100%;
-    height: 210px;
+    height: 100%;
     justify-content: space-between;
 }
 
@@ -209,6 +205,8 @@ img {
     font-size: 48px;
     line-height: 130%;
     letter-spacing: 0%;
+    width: 100%;
+    color: #212529;
 }
 
 .num-especialistas {
@@ -218,6 +216,7 @@ img {
     line-height: 130%;
     letter-spacing: 0%;
     width: 100%;
+    color: #212529;
 }
 
 .num-anos {
@@ -227,10 +226,11 @@ img {
     line-height: 130%;
     letter-spacing: 0%;
     width: 100%;
+    color: #212529;
 }
 
 .background-2 {
-    min-height: 100vh; 
+    height: 1082px; 
     width: 100%;
     background-color: #F7F9F9; 
     z-index: 4;
@@ -239,12 +239,97 @@ img {
 }
 
 .web-content-2 {
-    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0rem;
     width: 100%;
     height: 100%;
-    opacity: 1;
-    align-items: flex-start;
+    text-align: center;
+    transform: translateY(45%);
+    gap: 2rem;
 }
+
+.main-titulo {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    text-align: center;
+    width: 497px;
+    height: 104px;
+    margin: 0 auto;
+    color: #212529;
+}
+
+.grid-cards {
+    transform: translateY(10%);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    height: 100%;
+    gap: 2.5rem;
+}
+
+.cards {
+    background-color: #FFFFFF;
+    padding: 1.8rem;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: #DCE9E2;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cards-titulo {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: start;
+    color: #212529;
+}
+
+.cards-descricao {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: start;
+    color: #485145;
+}
+
+
+/* |||||||||||||||||||||ESSE CHECK FOI FEITO COM IA|||||||||||||||||||||||| */
+
+
+.card-check-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #DCE9E2; /* Cor de fundo idêntica ao figma */
+    border-radius: 50%;        /* Deixa redondo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+
+.card-check-icon::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    height: 8px;
+    border: solid #00856F;     /* Cor do check verde escuro */
+    border-width: 0 2px 2px 0; /* Cria apenas as bordas de baixo e da direita */
+    transform: rotate(45deg);  /* Gira 45 graus para virar um check */
+    top: 5px;                  /* Ajuste fino da posição vertical */
+}
+
+
+/*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
 
 .background-3 {
@@ -259,7 +344,6 @@ img {
     padding: 1rem;
     width: 100%;
     height: 100%;
-    opacity: 1;
     align-items: flex-start;
 }
 
@@ -275,7 +359,6 @@ img {
     padding: 1rem;
     width: 100%;
     height: 100%;
-    opacity: 1;
     align-items: flex-start;
 }
 
@@ -300,7 +383,6 @@ img {
 .footer-content {
     padding: 1rem;
     height: 268px;
-    opacity: 1;
     align-items: flex-start;
 }
 
