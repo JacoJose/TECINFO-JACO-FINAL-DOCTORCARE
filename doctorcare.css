@@ -301,9 +301,7 @@ img {
     color: #485145;
 }
 
-
 /* |||||||||||||||||||||ESSE CHECK FOI FEITO COM IA|||||||||||||||||||||||| */
-
 
 .card-check-icon {
     width: 24px;
@@ -328,9 +326,7 @@ img {
     top: 5px;                  /* Ajuste fino da posição vertical */
 }
 
-
 /*|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
-
 
 .background-3 {
     min-height: 100vh; 
@@ -384,5 +380,5 @@ img {
     padding: 1rem;
     height: 268px;
     align-items: flex-start;
-}
+} 
 
