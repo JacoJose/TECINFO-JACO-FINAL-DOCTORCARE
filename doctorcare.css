@@ -5,6 +5,11 @@
     font-family: system-ui, 'Segoe UI', 'Roboto', 'Helvetica Neue', sans-serif;
 }
 
+*img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
 
 .header-fixed {
     position: fixed;
@@ -119,7 +124,7 @@
     color: #212529;
 }
 
-.descricao {
+.hero-descricao {
     width: 585px;
     height: 54px;
     top: 349px;
@@ -154,18 +159,13 @@
     align-items: flex-start;
 }
 
-.pessoa {
-    grid-area: pessoa;
-    /* overflow: hidden; */
-}
-
-img {
+.pessoa img {
     height: 650px;
     width: 100%;
     object-fit: contain;
     transform: translateY(-15%);
-
 }
+
 
 .destaques {
     grid-area: destaques;
@@ -245,7 +245,7 @@ img {
     width: 100%;
     height: 100%;
     text-align: center;
-    transform: translateY(45%);
+    transform: translateY(40%);
     gap: 2rem;
 }
 
@@ -262,24 +262,26 @@ img {
 }
 
 .grid-cards {
-    transform: translateY(10%);
+    transform: translateY(5%);
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 0fr 0fr 0fr;
+    grid-template-rows: 0fr 0fr;
     width: 100%;
     height: 100%;
-    gap: 2.5rem;
+    gap: 2rem;
 }
 
 .cards {
     background-color: #FFFFFF;
-    padding: 1.8rem;
+    padding: 1.5rem;
     border-radius: 5px;
     border: 1px solid;
     border-color: #DCE9E2;
     gap: 1rem;
     display: flex;
     flex-direction: column;
+    width: 347px;
+    height: 207px;
 }
 
 
@@ -292,7 +294,7 @@ img {
     color: #212529;
 }
 
-.cards-descricao {
+.descricao {
     font-weight: 400;
     font-size: 16px;
     line-height: 150%;
@@ -337,10 +339,33 @@ img {
 }
 
 .web-content-3 {
-    padding: 1rem;
+    display: flex;
     width: 100%;
     height: 100%;
-    align-items: flex-start;
+    padding: 0rem;
+}
+
+.img-sobre-nos img {
+    width: 480px;
+    height: 414px;
+    object-fit: cover;
+    border-radius: 15px;
+    object-position: 0%;
+}
+
+.flex-sobre-nos {
+    display:flex;
+    flex-direction: row;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sobre-nos {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
 }
 
 .background-4 {
